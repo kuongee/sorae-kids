@@ -1,25 +1,30 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import Layout from './components/Layout.svelte';
-  import garland from './assets/garland.png';
-  import image1 from './assets/image1.png';
-  import image2 from './assets/image2.jpeg';
+  import Heart from './components/icons/Heart.svelte';
 
   onMount(async () => {
     const script = document.createElement('script');
 
     script.onload = () => {
       window.kakao.maps.load(() => {
+        const lat = 37.621398;
+        const lng = 127.027308;
+
+        // 지도 생성
         const mapContainer = document.getElementById('map');
         const mapOption = {
-          center: new window.kakao.maps.LatLng(37.621482, 127.027384), // 지도의 중심좌표
-          level: 2, // 지도의 확대 레벨
-          marker: {
-            position: new window.kakao.maps.LatLng(37.621482, 127.027384),
-            text: '서울소래교회',
-          },
+          center: new window.kakao.maps.LatLng(lat, lng),
+          level: 2,
         };
-        new window.kakao.maps.StaticMap(mapContainer, mapOption);
+        const map = new window.kakao.maps.Map(mapContainer, mapOption);
+
+        // 마커 표시
+        const markerPosition = new window.kakao.maps.LatLng(lat, lng);
+        const marker = new window.kakao.maps.Marker({
+          position: markerPosition,
+        });
+        marker.setMap(map);
       });
     };
 
@@ -29,32 +34,38 @@
   });
 </script>
 
-<div>
-  <Layout>
-    <img alt="garland" src={garland} />
-    <h1 class="text-center">소래교회 아동부</h1>
-    <h1 class="text-center">초청장</h1>
-    <section class="mx-4 text-center mt-4">
-      <p>소래교회 아동부로 놀러오세요!</p>
-      <p>매주 일요일 아침 11시</p>
+<Layout>
+  <h1 class="flex justify-center mb-2"><Heart />초대합니다<Heart /></h1>
+  <h2>서울소래교회 아동부</h2>
+  <div class="divide-y-2 divide-dashed divide-lime-300">
+    <section class="text-center my-4">
+      <p>일정: 매주 일요일 오전 11시</p>
+      <p>장소: 소래교회 아동부 교육관</p>
+      <section class="my-4">
+        <p>초대하는 글</p>
+        <p>초대하는 글</p>
+        <p>초대하는 글</p>
+        <p>초대하는 글</p>
+        <p>초대하는 글</p>
+      </section>
     </section>
-    <section class="mx-4">
-      <div class="columns-2">
-        <img class="w-full rounded-md" src={image1} />
-        <img class="w-full rounded-md" src={image2} />
-        <!-- ... -->
-      </div>
-    </section>
-    <section class="mx-4">
-      <h2>오는 길</h2>
+    <section class="my-4">
+      <h3 class="mt-4">오는 길</h3>
       <p>미아역에서</p>
       <div id="map" style="width:100%;height:200px;"></div>
     </section>
-  </Layout>
-</div>
+    <section>
+      <h3 class="mt-4">교회 소개</h3>
+      <p>교회 소개</p>
+      <p>교회 소개</p>
+      <p>교회 소개</p>
+    </section>
+  </div>
+</Layout>
 
 <style lang="postcss">
   :global(html) {
-    background-color: theme(colors.orange.100);
+    background-color: theme(colors.yellow.50);
+    font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
   }
 </style>

@@ -1,3 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'NanumSquareRound';
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url(assets/fonts/NanumSquareRoundOTFR.otf) format('opentype');
+  }
+  @font-face {
+    font-family: 'NanumSquareRound';
+    font-style: bold;
+    font-weight: 700;
+    font-display: swap;
+    src: url(assets/fonts/NanumSquareRoundOTFEB.otf) format('opentype');
+  }
+
+  h1 {
+    @apply text-4xl;
+    @apply text-center;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply text-center;
+    @apply font-bold;
+  }
+  h3 {
+    @apply font-bold;
+  }
+}
