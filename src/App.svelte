@@ -39,8 +39,8 @@
   <h2>서울소래교회 아동부</h2>
   <div class="divide-y-2 divide-dashed divide-lime-300">
     <section class="text-center my-4">
-      <p>일정: 매주 일요일 오전 11시</p>
-      <p>장소: 소래교회 아동부 교육관</p>
+      <p>매주 일요일 오전 11시</p>
+      <p>소래교회 교육관</p>
       <section class="my-4">
         <p>초대하는 글</p>
         <p>초대하는 글</p>

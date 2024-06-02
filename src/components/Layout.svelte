@@ -5,10 +5,10 @@
 
 <div class="container mx-auto max-w-screen-md">
   <img class="mb-4" alt="garland" src={garland} />
-  <div class="mt-6 px-4 pb-32">
+  <div class="mt-6 px-4">
     <slot />
   </div>
-  <img class="fixed bottom-0" alt="church" src={church} />
+  <img alt="church" src={church} />
 </div>
 
 <style lang="postcss">
