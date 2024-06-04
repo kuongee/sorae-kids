@@ -3,4 +3,6 @@
   import { faHeart } from '@fortawesome/free-solid-svg-icons';
 </script>
 
-<Fa icon={faHeart} />
+<div class="mx-2">
+  <Fa icon={faHeart} color="#ff4d4d" />
+</div>
