@@ -9,9 +9,9 @@
     <Confetti
       x={[-5, 5]}
       y={[0, 0.1]}
-      delay={[500, 2000]}
+      delay={[300, 3000]}
       duration={5000}
-      amount={200}
+      amount={400}
       fallDistance="100vh"
       size={10}
       colorArray={["#ff7158", "#ffc783", "#a7d345", "#a7d3e4", "#cd3072"]}
@@ -19,7 +19,7 @@
   </div>
 
   <img class="mb-4" alt="garland" src={garland} />
-  <div class="mt-6 px-4">
+  <div class="my-6 px-4">
     <slot />
   </div>
   <img alt="church" src={church} />

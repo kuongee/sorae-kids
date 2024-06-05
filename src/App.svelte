@@ -41,10 +41,10 @@
   <h1 class="flex justify-center mb-2"><Heart />초대해요<Heart /></h1>
   <h2>서울소래교회 아동부</h2>
   <div class="divide-y-2 divide-dashed divide-lime-300">
-    <section class="text-center my-4 text-pretty text-2xl md:text-3xl">
+    <section class="font-star text-center my-4 text-2xl md:text-3xl break-keep">
       <p><Clock />매주 일요일 오전 11시</p>
       <p><LocationDot />소래교회 교육관</p>
-      <section class="my-4 text-xl md:text-2xl">
+      <section class="my-4">
         <p>어서와~ 교회는 처음이지?</p>
         <p>행복하고 재미있는 일이</p>
         <p>
@@ -54,14 +54,15 @@
     </section>
     <section class="my-4">
       <h3 class="mt-4">오는 길</h3>
-      <p>미아역에서</p>
-      <div id="map" style="width:100%;height:200px;"></div>
+      <p class="text-sm">서울시 강북구 도봉로33길 9 3층(미진빌딩)</p>
+      <div class="mt-2" id="map" style="width:100%;height:200px;"></div>
     </section>
     <section>
       <h3 class="mt-4">교회 소개</h3>
-      <p>교회 소개</p>
-      <p>교회 소개</p>
-      <p>교회 소개</p>
+      <p class="break-keep text-sm">
+        서울소래교회는 대한예수교장로회(통합)교단 서울강북노회에 소속된 복음적인
+        교회입니다.
+      </p>
     </section>
   </div>
 </Layout>
@@ -70,10 +71,5 @@
   :global(html) {
     background-color: theme(colors.yellow.50);
     font-family: 'NanumSquareRound', 'Noto Sans KR', sans-serif;
-  }
-
-  p {
-    font-family: 'star', 'NanumSquareRound', 'Noto Sans KR', sans-serif;
-    /* font-size: 1.5rem; */
   }
 </style>
