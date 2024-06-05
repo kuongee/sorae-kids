@@ -4,7 +4,7 @@ export default {
   theme: {
     fontFamily: {
       html: ['NanumSquareRound', 'Noto Sans KR', 'sans-serif'],
-      star: ['star', 'NanumSquareRound', 'Noto Sans KR', 'sans-serif'],
+      OwnglyphRye: ['OwnglyphRye', 'NanumSquareRound', 'Noto Sans KR', 'sans-serif'],
     },
     extend: {},
   },

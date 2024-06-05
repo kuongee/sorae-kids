@@ -41,7 +41,7 @@
   <h1 class="flex justify-center mb-2"><Heart />초대해요<Heart /></h1>
   <h2>서울소래교회 아동부</h2>
   <div class="divide-y-2 divide-dashed divide-lime-300">
-    <section class="font-star text-center my-4 text-2xl md:text-3xl break-keep">
+    <section class="font-OwnglyphRye text-center my-4 text-xl md:text-2xl break-keep">
       <p><Clock />매주 일요일 오전 11시</p>
       <p><LocationDot />소래교회 교육관</p>
       <section class="my-4">

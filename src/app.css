@@ -19,11 +19,11 @@
   }
 
   @font-face {
-    font-family: 'star';
+    font-family: 'OwnglyphRye';
     font-style: regular;
     font-weight: 200;
     font-display: swap;
-    src: url(assets/fonts/NanumBanJjagBanJjagByeor.ttf) format('truetype');
+    src: url(assets/fonts/OwnglyphRye.ttf) format('truetype');
   }
 
   h1 {
